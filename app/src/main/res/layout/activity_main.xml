@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ImageView
+    android:id="@+id/Screen1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/topleft"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="↑↑"
+        app:layout_constraintBottom_toTopOf="@+id/bottomleft"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/topmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="↑"
+        app:layout_constraintBottom_toBottomOf="@+id/topleft"
+        app:layout_constraintStart_toEndOf="@+id/topleft"
+        app:layout_constraintTop_toTopOf="@+id/topleft" />
+
+    <Button
+        android:id="@+id/topright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="↓↓"
+        app:layout_constraintBottom_toBottomOf="@+id/topmid"
+        app:layout_constraintStart_toEndOf="@+id/topmid"
+        app:layout_constraintTop_toTopOf="@+id/topmid" />
+
+    <Button
+        android:id="@+id/bottomleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="←"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/topleft"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bottommid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text=" ↓"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomleft"
+        app:layout_constraintEnd_toEndOf="@+id/topmid"
+        app:layout_constraintStart_toEndOf="@+id/bottomleft"
+        app:layout_constraintTop_toTopOf="@+id/bottomleft" />
+
+    <Button
+        android:id="@+id/bottomright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="→"
+        app:layout_constraintBottom_toBottomOf="@+id/bottommid"
+        app:layout_constraintEnd_toEndOf="@+id/topright"
+        app:layout_constraintStart_toEndOf="@+id/bottommid"
+        app:layout_constraintTop_toTopOf="@+id/bottommid" />
+
+</android.support.constraint.ConstraintLayout>
