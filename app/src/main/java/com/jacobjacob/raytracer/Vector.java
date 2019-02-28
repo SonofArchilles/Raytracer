@@ -34,7 +34,7 @@ public class Vector {
     }
 
     public Vector addVector(Vector b) {
-        return new Vector(this.x += b.x, this.y += b.y, this.z += b.z);
+        return new Vector(this.x + b.x, this.y + b.y, this.z + b.z);
     }
 
 
